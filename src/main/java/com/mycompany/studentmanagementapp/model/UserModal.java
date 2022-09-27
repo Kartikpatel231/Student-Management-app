@@ -2,6 +2,7 @@ package com.mycompany.studentmanagementapp.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.mycompany.studentmanagementapp.enums.Gender;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -14,5 +15,7 @@ public class UserModal {
     private String  mobileNumber;
     private String email;
     private String password;
+    private Gender gender;
+
 
 }

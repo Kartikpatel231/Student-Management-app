@@ -1,5 +1,6 @@
 package com.mycompany.studentmanagementapp.entity;
 
+import com.mycompany.studentmanagementapp.enums.Gender;
 import jdk.nashorn.internal.objects.annotations.Getter;
 import jdk.nashorn.internal.objects.annotations.Setter;
 import lombok.Data;
@@ -18,4 +19,6 @@ public class UserEntity {
     private String  mobileNumber;
     private String email;
     private String password;
+    private Gender gender;
+
 }
