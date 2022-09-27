@@ -25,7 +25,7 @@ public class UserController {
 
     @PostMapping("/users")
 
-
+    @CrossOrigin
     public ResponseEntity<Boolean> login(@RequestBody UserModal userModal) throws BusinessException {
 
         logger.debug("Entering method login");
@@ -35,6 +35,7 @@ public class UserController {
         return responseEntity;
     }
    // @CrossOrigin(origins = "http://localhost:63342")
+    @CrossOrigin
     @PostMapping("/users/register")
     public ResponseEntity<Long> register(@RequestBody UserModal userModal)throws BusinessException {
 
